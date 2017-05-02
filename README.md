@@ -9,13 +9,13 @@ all on Ubuntu 16.04
 
 # How to run?
 
-  export PGDATABASE=DBname
-  export PGUSER=DBUsername
-  export PGPASSWORD=DBpassword
-  export PGPORT=5432
-  export PGHOST=localhost 
-  
-  docker build -t niene/postgis_ubuntu
-  
-  docker run --name $PGDATABASE -e POSTGRES_DB=$PGDATABASE -e POSTGRES_USER=$PGUSER -e POSTGRES_PASSWORD=$PGPASSWORD -p $PGPORT:5432 -d niene/postgis_ubuntu
+	export PGDATABASE=DBname
+	export PGUSER=DBUsername
+	export PGPASSWORD=DBpassword
+	export PGPORT=5432
+	export PGHOST=localhost 
+
+	docker build -t niene/postgis_ubuntu
+
+	docker run --name $PGDATABASE -e POSTGRES_DB=$PGDATABASE -e POSTGRES_USER=$PGUSER -e POSTGRES_PASSWORD=$PGPASSWORD -p $PGPORT:5432 -d niene/postgis_ubuntu
 
